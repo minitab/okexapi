@@ -25,12 +25,8 @@ class AccountController extends ActiveController
      */
     protected $obj = '';
 
-    /**
-     * @throws \yii\base\InvalidConfigException
-     */
     public function init()
     {
-        parent::init();
         $this->ex = 'okex';
         if ($this->ex == 'okex') {
             $exClass = 'common\components\\'.$this->ex.'\\Account';
@@ -47,11 +43,6 @@ class AccountController extends ActiveController
         unset($action['update']);
         unset($action['delete']);
         unset($action['options']);
-    }
-
-    public function actionSearch()
-    {
-        return '测试查询';
     }
 
     /**

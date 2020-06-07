@@ -45,7 +45,7 @@ composer install
 
 ### 站点配置
 
-> 注意：Nginx/IIS 先要设置好[伪静态](start-rewrite.md)，Apache 默认已配置
+> 注意：Nginx/IIS 先要设置好伪静态，Apache 默认已配置
 
 站点指向目录为当前项目的web下 
 
